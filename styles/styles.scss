@@ -106,6 +106,8 @@ h6 {
   align-items: center;
   overflow: hidden;
   transition: 0.2s;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
 
   &:active {
     box-shadow: none;
