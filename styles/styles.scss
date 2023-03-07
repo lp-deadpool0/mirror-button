@@ -114,6 +114,7 @@ body {
   transition: 0.2s;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-tap-highlight-color: transparent;
+  user-select: none;
 
   &:active {
     box-shadow: none;
@@ -187,7 +188,8 @@ body {
   font-size: 1.3rem;
   letter-spacing: 0.1em;
   cursor: pointer;
-  transition: 0.2s;
+  transition: 0.1s;
+  font-family: Arial, Helvetica, sans-serif;
   &:hover {
     opacity: 1;
   }

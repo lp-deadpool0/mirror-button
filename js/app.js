@@ -3,7 +3,6 @@ navigator.mediaDevices
   .then(function (stream) {
     var video = document.querySelector(".video");
     video.srcObject = stream;
-    video.playbackRate = 0.1;
     video.play();
   })
   .catch(function (err) {
@@ -17,8 +16,9 @@ let clickCounter = 0;
 
 button.addEventListener("click", () => {
   var audio = new Audio();
-  audio.volume = 0.4;
-  audio.src = "../audio/click.mp3";
+  audio.volume = 0.2;
+  // audio.src = audioFile;
+  audio.src = "./audio/click.mp3";
   audio.autoplay = true;
 
   dirtyTexture.style.opacity = clickCounter / 100;
